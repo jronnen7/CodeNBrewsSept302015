@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Web Optimization</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -79,7 +79,7 @@
 						</h2>
 					</section>
 					<section>
-						<img src="/serverdiagram.png"/>
+						<img src="/serverDiagram.png"/>
 					</section>
 				</section>
 
@@ -89,8 +89,8 @@
 						<p>A Brief Overview</p>
 					</section>
 					<section>
-						<h2>Hardware</h2>
-						<p>RAM, RAM, RAM</p>
+						<h2>Why Does the Server Slow Down?</h2>
+						<p>Slow application logic, slow database queries, slow routing, frameworks, libraries, resource CPU starvation, or memory starvation</p>
 					</section>					
 					<section>
 						<h2>Limit the Number of Modules needed By the Server</h2>
@@ -237,40 +237,21 @@ else {
 
 
 				<section data-state="customevent">
-					<h2>State Events</h2>
+					<h2>Custom Events</h2>
 					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
+						
 					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"mycustomevent" has fired' );
-} );
+					<pre><code class="javascript" data-trim style="font-size: 18px;">
+myElement.addEventListener("customevent", function(e) {
+	// your custom event code
+})
 					</code></pre>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
-
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
 				</section>
 
 				<section style="text-align: left;">
 					<h1>THE END</h1>
 					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+						Questions ? <br>
 					</p>
 				</section>
 
