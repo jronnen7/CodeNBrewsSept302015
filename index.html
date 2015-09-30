@@ -242,9 +242,17 @@ else {
 						
 					</p>
 					<pre><code class="javascript" data-trim style="font-size: 18px;">
+// add you event listener like normal
 myElement.addEventListener("customevent", function(e) {
 	// your custom event code
 })
+
+// be sure to define your event somewhere else and dispatch at appropriat times					
+var event = document.createEvent("Event");
+event.initEvent("customEvent", true, true);
+event.customData = getYourCustomData();
+window.dispatchEvent(event);
+  
 					</code></pre>
 				</section>
 
