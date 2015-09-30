@@ -234,28 +234,6 @@ else {
 					</section>		
 				</section>				
 
-
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						
-					</p>
-					<pre><code class="javascript" data-trim style="font-size: 18px;">
-// add you event listener like normal
-myElement.addEventListener("customevent", function(e) {
-	// your custom event code
-})
-
-// be sure to define your event somewhere else and dispatch at appropriat times					
-var event = document.createEvent("Event");
-event.initEvent("customEvent", true, true);
-event.customData = getYourCustomData();
-window.dispatchEvent(event);
-  
-					</code></pre>
-				</section>
-
 				<section style="text-align: left;">
 					<h1>THE END</h1>
 					<p>
